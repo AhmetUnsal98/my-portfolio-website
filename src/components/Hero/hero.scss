@@ -114,6 +114,7 @@
 
     @include mobile {
         align-items: center;
+        background-color: red;
     }
     .photo-container {
         position: relative;
@@ -121,7 +122,6 @@
         height: 400px;
         border-radius: 50%;
         overflow: hidden;
-        background-color: red;
         @include mobile {
             width: 200px;
             height: 200px;
