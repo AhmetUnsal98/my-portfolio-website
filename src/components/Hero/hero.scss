@@ -147,6 +147,9 @@
         background-color: black;
         border-radius: 50%;
         z-index: 1;
+        @include mobile {
+            inset: 50px;
+        }
     }
     .content {
         position: absolute;
@@ -154,7 +157,7 @@
         z-index: 3;
         border-radius: 50%;
         @include mobile {
-            inset: 5px;
+            inset: 50px;
         }
         img {
             position: absolute;
