@@ -113,16 +113,15 @@
     overflow-y: hidden;
 
     @include mobile {
-        flex: 4;
         align-items: center;
     }
     .photo-container {
         position: relative;
         width: 400px;
         height: 400px;
-        background-color: rgba(0, 0, 0, 0.5);
         border-radius: 50%;
         overflow: hidden;
+        background-color: red;
         @include mobile {
             width: 200px;
             height: 200px;
