@@ -1,0 +1,12 @@
+.App {
+    height: 100vh;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    max-width: 100%;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    background: url("./assets/background.jpg");
+}
+.App::-webkit-scrollbar {
+    display: none;
+}

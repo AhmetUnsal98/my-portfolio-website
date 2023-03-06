@@ -1,0 +1,129 @@
+@import "../../../../styles/mixins.scss";
+.navbar {
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-y: hidden;
+    @include mobile {
+        border-bottom: 1px solid #f1a100;
+    }
+}
+.half-side {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .logo {
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .name {
+        font-size: 2rem;
+        margin: 0px;
+        padding: 0px;
+        color: #f1a100;
+        text-shadow:
+          /* White glow */ 0 0 2px #f1a100, 0 0 2px #f1a100, 0 0 2px #f1a100;
+    }
+    .dev {
+        font-size: 0.9rem;
+        color: #f1a100;
+        text-shadow:
+          /* White glow */ 0 0 2px #f1a100, 0 0 2px #f1a100, 0 0 2px #f1a100;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        @include mobile {
+            display: none;
+        }
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        li {
+            font-size: 1rem;
+            color: #f1a100;
+            text-shadow:
+              /* White glow */ 0 0 2px #f1a100, 0 0 2px #f1a100, 0 0 2px #f1a100;
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover {
+                color: lightgray;
+            }
+        }
+    }
+
+    .search-outline {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        @include mobile {
+            display: none;
+        }
+    }
+    button {
+        width: 92px;
+        height: 32px;
+        background-color: #f1a100;
+        border-radius: 4px;
+        border: 0px;
+        color: white;
+        opacity: 0.9;
+        text-shadow:
+        /* White glow */ 0 0 1px white, 0 0 1px white, 0 0 1px white;
+        margin: 1rem;
+        cursor: pointer;
+        @include mobile {
+            display: none;
+        }
+    }
+    .mobile-menu {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        transition: 850ms;
+        width: 50%;
+        height: 100vh;
+        background-color: #f1a100;
+        z-index: 999;
+    }
+    .mobile-menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        ul {
+            li {
+                font-size: 1.5rem;
+                margin: 1rem;
+                color: white;
+            }
+        }
+    }
+    .mobile-menu.active {
+        top: 0;
+        right: 0;
+        transition: 350ms;
+
+        p {
+            color: #f1a100;
+            font-size: 1rem;
+        }
+    }
+}
+.menu-outline-mobile {
+    display: none;
+    @include mobile {
+        display: flex;
+    }
+}
