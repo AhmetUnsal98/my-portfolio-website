@@ -99,7 +99,6 @@
         letter-spacing: 1px;
         @include mobile {
             width: 42%;
-
             margin: 0.6rem;
         }
     }
@@ -134,7 +133,7 @@
         inset: 0px 15px;
         background: linear-gradient(315deg, #f1a100, white);
         transition: 0.5s;
-        animation: animate 5s linear infinite;
+        --webkit-animation: animate 5s linear infinite;
         @include mobile {
             inset: 0px 0px;
             animation: animate 2s linear infinite;
