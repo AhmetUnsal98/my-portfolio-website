@@ -129,13 +129,16 @@
     }
     .photo-container::before {
         content: "";
+
         position: absolute;
         inset: 0px 15px;
         background: linear-gradient(315deg, #f1a100, white);
         transition: 0.5s;
         animation: animate 5s linear infinite;
         @include mobile {
-            inset: 5px 15px;
+            width: 200px;
+            height: 200px;
+            inset: 0px 0px;
             animation: animate 2s linear infinite;
         }
     }
