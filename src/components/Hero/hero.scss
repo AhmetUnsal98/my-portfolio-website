@@ -135,6 +135,10 @@
         background: linear-gradient(315deg, #f1a100, white);
         transition: 0.5s;
         animation: animate 5s linear infinite;
+        @include mobile {
+            inset: 0px;
+            animation: animate 2s linear infinite;
+        }
     }
     .photo-container::after {
         content: "";
