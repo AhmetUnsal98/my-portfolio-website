@@ -114,7 +114,7 @@
 
     @include mobile {
         align-items: center;
-        background-color: red;
+        border-radius: 100%;
     }
     .photo-container {
         position: relative;
@@ -135,7 +135,7 @@
         transition: 0.5s;
         animation: animate 5s linear infinite;
         @include mobile {
-            inset: 0px 0px;
+            inset: 5px 15px;
             animation: animate 2s linear infinite;
         }
     }
