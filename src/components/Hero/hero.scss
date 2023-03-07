@@ -136,8 +136,6 @@
         transition: 0.5s;
         animation: animate 5s linear infinite;
         @include mobile {
-            width: 200px;
-            height: 200px;
             inset: 0px 0px;
             animation: animate 2s linear infinite;
         }
@@ -150,7 +148,7 @@
         border-radius: 50%;
         z-index: 1;
         @include mobile {
-            inset: 6px;
+            inset: 150px;
         }
     }
     .content {
@@ -159,7 +157,7 @@
         z-index: 3;
         border-radius: 50%;
         @include mobile {
-            inset: 5px;
+            inset: 7px;
         }
         img {
             position: absolute;
