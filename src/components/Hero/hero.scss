@@ -134,7 +134,7 @@
         inset: 0px 15px;
         background: linear-gradient(315deg, #f1a100, white);
         transition: 0.5s;
-        animation: animate 5s linear infinite;
+        animation: animate 3s linear infinite;
         @include mobile {
             inset: 0 15px;
             animation: animate 2s linear infinite;
