@@ -125,6 +125,7 @@
         @include mobile {
             width: 200px;
             height: 200px;
+            border-radius: 100%;
         }
     }
     .photo-container::before {
@@ -136,7 +137,9 @@
         transition: 0.5s;
         animation: animate 5s linear infinite;
         @include mobile {
-            inset: 0px 0px;
+            width: 200px;
+            width: 200px;
+            inset: 5px 5px;
             animation: animate 2s linear infinite;
         }
     }
