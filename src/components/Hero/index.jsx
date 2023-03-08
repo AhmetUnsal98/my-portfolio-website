@@ -34,10 +34,8 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-container-right">
-          <div className="photo-container">
-            <div className="content">
-              <img src={foto}></img>
-            </div>
+          <div className="photo-container glow">
+            <img src={foto}></img>
           </div>
         </div>
       </div>
