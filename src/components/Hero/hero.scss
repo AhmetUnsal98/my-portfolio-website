@@ -131,10 +131,11 @@
             height: 200px;
         }
         img {
-            width: 100%;
+            width: 95%;
             height: 95%;
             object-fit: cover;
             @include mobile {
+                width: 100%;
                 object-fit: contain;
             }
         }
@@ -149,6 +150,9 @@
         height: calc(100%);
         z-index: -1;
         animation: animas 20s linear infinite;
+        @include mobile {
+            animation: animas 15s linear infinite;
+        }
     }
     @keyframes animas {
         0% {
