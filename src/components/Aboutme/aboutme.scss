@@ -6,6 +6,8 @@
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .wrapper {
     width: 100vw;
@@ -74,6 +76,18 @@
         @include mobile {
             font-size: 1rem;
         }
+    }
+    button {
+        width: 13%;
+        height: 12%;
+        margin-top: 0.5rem;
+        border: 0px;
+        cursor: pointer;
+        color: white;
+        font-size: 1.1rem;
+        padding: 0.2rem;
+        background-color: $base-color-orange;
+        border-radius: 2px;
     }
 }
 .skill-container {

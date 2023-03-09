@@ -27,6 +27,7 @@ const Aboutme = () => {
               samet il samet kelar
               <br /> selam semeat solar sosa dolar samet il dir samet
             </p>
+            <button>Download Cv</button>
           </div>
         </div>
       </div>
