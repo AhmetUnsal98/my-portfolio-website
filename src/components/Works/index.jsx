@@ -47,11 +47,11 @@ const Works = () => {
     setIndex(index + 1);
   }
   return (
-    <div className="works">
+    <div className="works" id="works">
       <div className="works-wrapper">
         <div className="works-upper-section">
-          <h3>Title</h3>
-          <h2>Projects.</h2>
+          <h2>Title</h2>
+          <h1>Projects.</h1>
           <p>
             lorem dolar ipsum dolar samet it lorem saten salet minsu dolay yaser
             dolar sum ipsum samet gul sit.lorem dolar ipsum dolar samet it lorem

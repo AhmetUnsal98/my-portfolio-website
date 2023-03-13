@@ -16,10 +16,18 @@ const Navbar = () => {
         </div>
         <div className="menu">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Works</li>
-            <li>Contact</li>
+            <li>
+              <a href="#hero">Home</a>
+            </li>
+            <li>
+              <a href="#aboutme">About</a>
+            </li>
+            <li>
+              <a href="#works">Works</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
       </div>

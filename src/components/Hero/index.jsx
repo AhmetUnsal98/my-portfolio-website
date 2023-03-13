@@ -11,7 +11,7 @@ import {
 import foto from "../../assets/foto.jpeg";
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
       <Navbar />
       <div className="hero-wrapper">
         <div className="hero-container-left">

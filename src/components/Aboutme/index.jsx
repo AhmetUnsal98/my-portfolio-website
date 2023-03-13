@@ -8,7 +8,7 @@ import redux from "../../assets/redux.png";
 import SkillCard from "./Components/SkillCard.jsx/SkillCard";
 const Aboutme = () => {
   return (
-    <div className="aboutme">
+    <div className="aboutme" id="aboutme">
       <div className="wrapper">
         <div style={{ display: "flex", flexDirection: "row" }}>
           <div className="progress-container">
@@ -16,8 +16,8 @@ const Aboutme = () => {
             <div className="progress-stick"></div>
           </div>
           <div className="aboutme-info">
-            <span>INTRODUCTION</span>
-            <h2>Overview.</h2>
+            <h2>INTRODUCTION</h2>
+            <h1>Overview.</h1>
             <p>
               Lorem dolar ipsum dolar ipsum samet <br />
               il samet kelar selam semeat solar sosa dolar samet il dir samet
