@@ -1,11 +1,11 @@
 import React from "react";
 import "./aboutme.scss";
-import SkillCard from "./SkillCard.jsx/SkillCard";
 import html from "../../assets/html.png";
 import css3 from "../../assets/css3.png";
 import javascript from "../../assets/javascript.png";
 import react from "../../assets/react.png";
 import redux from "../../assets/redux.png";
+import SkillCard from "./Components/SkillCard.jsx/SkillCard";
 const Aboutme = () => {
   return (
     <div className="aboutme">

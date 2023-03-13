@@ -3,9 +3,9 @@
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-y: auto;
     scrollbar-width: none;
-    background: url("./assets/background.jpg");
+    background-color:#0a0909  ;
 }
 .App::-webkit-scrollbar {
     display: none;

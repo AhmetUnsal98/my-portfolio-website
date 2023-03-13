@@ -5,14 +5,11 @@
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .hero-wrapper {
     width: 100%;
     height: 100%;
-    scroll-snap-align: center;
     display: flex;
-    overflow-y: hidden;
     @include mobile {
         flex-direction: column-reverse;
         align-items: center;
@@ -26,20 +23,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow-y: hidden;
     @include mobile {
         justify-content: flex-start;
         margin-top: 1rem;
     }
-
     .info-container {
         display: flex;
         flex-direction: row;
-        overflow-y: hidden;
+
         .infos {
             display: flex;
             flex-direction: column;
-            overflow-y: hidden;
         }
         .social {
             display: flex;
@@ -59,7 +53,7 @@
         font-weight: 600;
         margin: 1rem;
         font-size: 3.2rem;
-        text-shadow: 0 2px 2px white, 0 2px 2px white, 0 0 2px white;
+        text-shadow: 0 1px 1px white, 0 1px 1px white, 0 0 1px white;
         overflow-y: hidden;
         @include mobile {
             font-size: 2rem;
@@ -80,14 +74,14 @@
         color: white;
         font-weight: 450;
         margin: 1rem;
-        text-shadow: 0 0px 2px white, 0 0px 2px white, 0 0 2px white;
+        text-shadow: 0 0px 1px white, 0 0px 1px white, 0 0 1px white;
         @include mobile {
             margin: 0.6rem;
         }
     }
     button {
-        width: 30%;
-        height: 52px;
+        width: 35%;
+        height: 48px;
         color: white;
         background-color: #f1a100;
         border-radius: 4px;
@@ -96,7 +90,7 @@
         cursor: pointer;
         color: white;
         text-shadow:
-          /* White glow */ 0 0 2px white, 0 0 2px white, 0 0 2px white;
+          /* White glow */ 0 0 1px white, 0 0 1px white, 0 0 1px white;
         letter-spacing: 1px;
         @include mobile {
             width: 42%;
@@ -111,7 +105,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    overflow-y: hidden;
 
     @include mobile {
         align-items: center;
@@ -120,7 +113,7 @@
         position: relative;
         width: 400px;
         height: 400px;
-        overflow: hidden;
+
         z-index: 2;
         display: flex;
         align-items: center;
@@ -177,7 +170,6 @@
     right: -50%;
     animation: ani 0.5s infinite alternate;
     cursor: pointer;
-    overflow-y: hidden;
 }
 @keyframes ani {
     from {

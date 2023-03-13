@@ -1,4 +1,5 @@
-@import "../../../styles/mixins.scss";
+@import "../../../../styles/mixins.scss";
+
 .skill-card {
     display: flex;
     flex-direction: column;
@@ -9,6 +10,11 @@
     margin: 1rem;
     padding: 1rem;
     border-radius: 0.5rem;
+    @include mobile {
+        max-height: 95px;
+        min-width: 95px;
+        margin: 0rem;
+    }
 }
 .skill-img-container {
     overflow-y: hidden;
@@ -39,5 +45,9 @@
         font-size: 1.2rem;
         text-shadow:
         /* White glow */ 0 0 2px #f1a100, 0 0 2px #f1a100, 0 0 2px #f1a100;
+        @include mobile {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
     }
 }

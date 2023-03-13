@@ -8,18 +8,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include mobile {
+        justify-content: flex-start;
+    }
 }
 .wrapper {
     width: 100vw;
-    height: 40vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     overflow-y: hidden;
     margin-top: 6rem;
     justify-content: center;
     @include mobile {
-        margin-top: 2rem;
-        height: auto;
+        margin-top: 0.5rem;
+        height: 40vh;
     }
 }
 .progress-container {
@@ -27,6 +30,7 @@
     flex-direction: column;
     height: 100%;
     align-items: center;
+    overflow-y: hidden;
     @include mobile {
         margin-left: 0.5rem;
     }
@@ -52,10 +56,12 @@
 .aboutme-info {
     display: flex;
     flex-direction: column;
+    height: 40vh;
     flex: 1;
-    height: 100%;
     margin-left: 1rem;
-
+    overflow-y: hidden;
+    @include mobile {
+    }
     span {
         color: $base-color-orange;
         @include mobile {
@@ -78,8 +84,8 @@
         }
     }
     button {
-        width: 13%;
-        height: 12%;
+        width: 20%;
+        height: 15%;
         margin-top: 0.5rem;
         border: 0px;
         cursor: pointer;
@@ -88,13 +94,21 @@
         padding: 0.2rem;
         background-color: $base-color-orange;
         border-radius: 2px;
+        @include mobile {
+            width: 40%;
+            height: 15%;
+        }
     }
 }
 .skill-container {
+    overflow-y: hidden;
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    @include mobile {
+        height: 55vh;
+    }
 }
