@@ -84,6 +84,7 @@
         height: 48px;
         color: white;
         background-color: #f1a100;
+        border: 0px;
         border-radius: 4px;
         font-size: 16px;
         margin: 1rem;
@@ -120,7 +121,7 @@
         justify-content: center;
 
         @include mobile {
-            width: 180px;
+            width: 172px;
             height: 200px;
         }
         img {
@@ -137,7 +138,7 @@
     .glow::after {
         content: "";
         position: absolute;
-        background: linear-gradient(90deg, #f1a100, #e9c478, #fe7f00, #cfcfcf, #f1e6d0);
+        background: linear-gradient(90deg, #f1a100, #e9c478, #fe7f00, #edeae8);
         background-size: 400%;
         width: calc(100%);
         height: calc(100%);

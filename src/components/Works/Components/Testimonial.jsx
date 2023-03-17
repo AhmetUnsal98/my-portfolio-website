@@ -2,29 +2,42 @@ import React from "react";
 import "./testimonial.scss";
 import { IoLogoGithub } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
-
+import resume from "../../../assets/proje1.png";
+import ecommerce from "../../../assets/ecommerce.png";
+import getir from "../../../assets/getir.png";
 const testimonials = [
   {
     id: "1",
-    title: "Project 1",
-    img: " https://images.unsplash.com/photo-1658730335794-c5edd544ccbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    desc: "lorem ipsum dolor sit amet lorem in reprehenderit in voluptate velit esse cillum dolore magna",
-    tags: ["react", "redux", "scss"],
+    title: "Clothing E-Commerce Shop",
+    link: "https://github.com/AhmetUnsal98/mern-stack-ecommerce",
+    img: ecommerce,
+    desc: "Fullstack e-commerce application with payment system a fully completed project is ready for use",
+    tags: [
+      "html",
+      "css",
+      "styled-component",
+      "react.js",
+      "redux",
+      "node.js",
+      "mongodb",
+      "iyzico",
+    ],
   },
   {
     id: "2",
-    title: "Project 2",
-    img: "https://images.unsplash.com/photo-1642320009030-ff80041e25ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1229&q=80",
-
-    desc: "lorem ipsum dolor sit amet lorem in reprehenderit in voluptate velit esse cillum dolore magna",
-    tags: ["react", "redux", "scss"],
+    title: "Resume Creator",
+    link: "https://github.com/AhmetUnsal98/make-your-cv",
+    img: resume,
+    desc: "This is an application for creating resume. It has progress to creating resume.",
+    tags: ["html", "css", "scss", "react", "redux", "typescript"],
   },
   {
     id: "3",
-    title: "Project 3",
-    img: "https://images.unsplash.com/photo-1572816703439-d8b34c4dc93f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80",
-    desc: "lorem ipsum dolor sit amet lorem in reprehenderit in voluptate velit esse cillum dolore magna",
-    tags: ["react", "redux", "scss"],
+    title: "Getir Clone",
+    link: "https://github.com/AhmetUnsal98/getirclonescss",
+    img: getir,
+    desc: "Getir clone with pixel perfect",
+    tags: ["html", "css", "scss", "react"],
   },
 ];
 
@@ -62,12 +75,16 @@ const Testimonial = ({ index, direction }) => {
             <h3>{testimonials[index].title}</h3>
             <p>{testimonials[index].desc}</p>
             <div className="testimonial-tags">
-              <span>#react</span> <span>#react</span> <span>#react</span>
+              {testimonials[index].tags.map((tag) => (
+                <span>#{tag},</span>
+              ))}
             </div>
           </div>
 
           <div className="github-icon">
-            <IoLogoGithub color="white" size={25} />
+            <a href={testimonials[index].link}>
+              <IoLogoGithub color="white" size={25} />
+            </a>
           </div>
         </motion.div>
       </AnimatePresence>

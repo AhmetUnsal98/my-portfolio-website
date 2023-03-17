@@ -9,18 +9,33 @@ import {
   IoLogoMedium,
 } from "react-icons/io5";
 import foto from "../../assets/foto.jpeg";
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className="hero" id="hero">
       <Navbar />
       <div className="hero-wrapper">
         <div className="hero-container-left">
-          <div className="info-container">
+          <motion.div
+            className="info-container"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+          >
             <div className="social">
-              <IoLogoGithub color="#f1a100" size={35} />
-              <IoLogoLinkedin color="#f1a100" size={35} />
-              <IoLogoInstagram color="#f1a100" size={35} />
-              <IoLogoMedium color="#f1a100" size={35} />
+              <a href="https://github.com/AhmetUnsal98">
+                {" "}
+                <IoLogoGithub color="#f1a100" size={35} />
+              </a>
+              <a href="https://www.linkedin.com/in/ahmet-unsal-js/">
+                <IoLogoLinkedin color="#f1a100" size={35} />
+              </a>
+              <a href="https://www.instagram.com/ahmetunsal.js/">
+                <IoLogoInstagram color="#f1a100" size={35} />
+              </a>
+              <a href="https://medium.com/@ahmet.unsal.1998">
+                <IoLogoMedium color="#f1a100" size={35} />
+              </a>
             </div>
             <div className="infos">
               <h1>
@@ -31,13 +46,18 @@ const Hero = () => {
               <p>My Name is Ahmet Ünsal The dev.</p>
               <button>Learn more</button>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="hero-container-right">
+        <motion.div
+          className="hero-container-right"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+        >
           <div className="photo-container glow">
             <img src={foto}></img>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="scroll-button">
         <IoArrowDown color="#f1a100" size={40} />

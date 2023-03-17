@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.scss";
 import { IoCloseCircle, IoMenuOutline, IoSearchOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 const Navbar = () => {
   const [sidebar, setSideBar] = useState(false);
   const showSideBar = () => {
@@ -10,28 +11,54 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="half-side">
-        <div className="logo">
+        <motion.div
+          initial={{ y: -40 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.75 }}
+          className="logo"
+        >
           <span className="name">Ahmet</span>
           <span className="dev">The Developer</span>
-        </div>
+        </motion.div>
         <div className="menu">
           <ul>
-            <li>
+            <motion.li
+              initial={{ y: -40 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1 }}
+            >
               <a href="#hero">Home</a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              initial={{ y: -40 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1.2 }}
+            >
               <a href="#aboutme">About</a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              initial={{ y: -40 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1.4 }}
+            >
               <a href="#works">Works</a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              initial={{ y: -40 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1.6 }}
+            >
               <a href="#contact">Contact</a>
-            </li>
+            </motion.li>
           </ul>
         </div>
       </div>
-      <div className="half-side">
+      <motion.div
+        className="half-side"
+        initial={{ y: -40 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 1.2 }}
+      >
         <div className={`mobile-menu ${sidebar === true ? "active" : ""}`}>
           <IoCloseCircle
             onClick={() => {
@@ -61,7 +88,7 @@ const Navbar = () => {
           <IoSearchOutline color="white" size={25} />
         </div>
         <button className="button">Hire now</button>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -5,6 +5,19 @@
     height: 100vh;
     scroll-snap-align: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+.contact-wrapper {
+    width: 100%;
+    height: 94vh;
+    display: flex;
     align-items: center;
     justify-content: center;
     @include mobile {
@@ -68,11 +81,11 @@
     }
     button {
         width: 28%;
-        height: 14%;
+        height: 11%;
         margin: 0.5rem;
         border-radius: 8px;
-        background-color: whitesmoke;
-        color: $base-color-orange;
+        background-color: $base-color-orange;
+        color: white;
         border: 1px solid $base-color-orange;
         font-size: 1rem;
         @include mobile {
@@ -86,5 +99,17 @@
         @include mobile {
             margin: 0.2rem;
         }
+    }
+}
+.footer {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    span {
+        text-align: center;
+        color: white;
+        margin: 0.5rem;
+        font-size: 0.8rem;
     }
 }

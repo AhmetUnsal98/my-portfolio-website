@@ -6,10 +6,18 @@ import javascript from "../../assets/javascript.png";
 import react from "../../assets/react.png";
 import redux from "../../assets/redux.png";
 import SkillCard from "./Components/SkillCard.jsx/SkillCard";
+import { motion } from "framer-motion";
+
 const Aboutme = () => {
   return (
     <div className="aboutme" id="aboutme">
-      <div className="wrapper">
+      <motion.div
+        className="wrapper"
+        initial={{ opacity: 0.5 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+      >
         <div style={{ display: "flex", flexDirection: "row" }}>
           <div className="progress-container">
             <div className="progress-circle"></div>
@@ -19,25 +27,35 @@ const Aboutme = () => {
             <h2>INTRODUCTION</h2>
             <h1>Overview.</h1>
             <p>
-              Lorem dolar ipsum dolar ipsum samet <br />
-              il samet kelar selam semeat solar sosa dolar samet il dir samet
-              Lorem dolar ipsum dolar ipsum samet il samet kelar selam semeat
-              solar
-              <br /> sosa dolar samet il dir samet Lorem dolar ipsum dolar ipsum
-              samet il samet kelar
-              <br /> selam semeat solar sosa dolar samet il dir samet
+              Hi, there My name is Ahmet , i am 24 years old. I am a Computer
+              Engineer who loves his job. <br />
+              I am actively developing projects in the Frontend side for 2
+              years.
+              <br /> I am hungry to learn new techonologies and programming
+              languages so i am constantly improving my coding skills.
+              <br />
+              You can see my active skill set below also download my resume and
+              contact with me.
             </p>
-            <button>Download Cv</button>
+            <a href="cv.pdf" download="cv.pdf">
+              Download Cv
+            </a>
           </div>
         </div>
-      </div>
-      <div className="skill-container">
+      </motion.div>
+      <motion.div
+        className="skill-container"
+        initial={{ x: -400, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.5 }}
+      >
         <SkillCard title="HTML" photo={html} />
         <SkillCard title="CSS" photo={css3} />
         <SkillCard title="JAVASCRIPT" photo={javascript} />
         <SkillCard title="REACT" photo={react} />
         <SkillCard title="REDUX" photo={redux} />
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./works.scss";
 import Testimonial from "./Components/Testimonial";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -49,16 +50,27 @@ const Works = () => {
   return (
     <div className="works" id="works">
       <div className="works-wrapper">
-        <div className="works-upper-section">
-          <h2>Title</h2>
+        <motion.div
+          className="works-upper-section"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.5 }}
+        >
+          <h2>MY WORKS</h2>
           <h1>Projects.</h1>
           <p>
-            lorem dolar ipsum dolar samet it lorem saten salet minsu dolay yaser
-            dolar sum ipsum samet gul sit.lorem dolar ipsum dolar samet it lorem
-            saten salet minsu dolay yaser dolar sum ipsum samet gul sit.
+            You can review my own projects. You can ask what you want to add or
+            what you want to learn.
           </p>
-        </div>
-        <div className="works-bottom-section">
+        </motion.div>
+        <motion.div
+          className="works-bottom-section"
+          initial={{ x: -400 }}
+          whileInView={{ x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        >
           <div className="arrow">
             <IoArrowBack
               onClick={() => {
@@ -74,7 +86,7 @@ const Works = () => {
               }}
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
