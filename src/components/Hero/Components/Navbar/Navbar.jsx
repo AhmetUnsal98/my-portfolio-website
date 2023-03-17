@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import "./navbar.scss";
-import { IoCloseCircle, IoMenuOutline, IoSearchOutline } from "react-icons/io5";
+import {
+  IoClose,
+  IoCloseCircle,
+  IoCloseCircleOutline,
+  IoMenuOutline,
+  IoSearchOutline,
+} from "react-icons/io5";
 import { motion } from "framer-motion";
 const Navbar = () => {
   const [sidebar, setSideBar] = useState(false);
@@ -59,23 +65,37 @@ const Navbar = () => {
         animate={{ y: 0 }}
         transition={{ duration: 1.2 }}
       >
-        <div className={`mobile-menu ${sidebar === true ? "active" : ""}`}>
-          <IoCloseCircle
+        <motion.div
+          className={`mobile-menu ${sidebar === true ? "active" : ""}`}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <IoClose
             onClick={() => {
               showSideBar();
             }}
             color="white"
             size={30}
+            style={{ margin: "1rem" }}
           />
           <div className="mobile-menu-list">
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Works</li>
-              <li>Contact</li>
+              <li>
+                <a href="#hero">Home</a>
+              </li>
+              <li>
+                <a href="#aboutme">About</a>
+              </li>
+              <li>
+                <a href="#works">Works</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
-        </div>
+        </motion.div>
         <div
           className="menu-outline-mobile"
           onClick={() => {
