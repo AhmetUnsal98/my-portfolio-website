@@ -66,8 +66,8 @@ const Works = () => {
         </motion.div>
         <motion.div
           className="works-bottom-section"
-          initial={{ x: -400 }}
-          whileInView={{ x: 0 }}
+          initial={{ opacity: 0.5 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
