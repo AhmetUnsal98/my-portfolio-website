@@ -37,7 +37,7 @@ const Aboutme = () => {
               You can see my active skill set below also download my resume and
               contact with me.
             </p>
-            <a href="Ahmeet_Unsal_Cv.pdf" download="Ahmet_Unsal_Cv.pdf">
+            <a href="cv.pdf" download="cv.pdf">
               Download Cv
             </a>
           </div>
