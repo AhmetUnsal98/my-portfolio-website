@@ -45,7 +45,7 @@ const Aboutme = () => {
       </motion.div>
       <motion.div
         className="skill-container"
-        initial={{ opacity: 0.5 }}
+        initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
