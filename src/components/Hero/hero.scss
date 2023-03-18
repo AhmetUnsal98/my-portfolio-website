@@ -79,7 +79,7 @@
             margin: 0.6rem;
         }
     }
-    button {
+    .button-aboutme {
         width: 35%;
         height: 48px;
         color: white;
@@ -90,6 +90,10 @@
         margin: 1rem;
         cursor: pointer;
         color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-shadow:
           /* White glow */ 0 0 1px white, 0 0 1px white, 0 0 1px white;
         letter-spacing: 1px;

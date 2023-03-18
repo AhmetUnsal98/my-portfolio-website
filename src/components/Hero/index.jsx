@@ -44,7 +44,9 @@ const Hero = () => {
               </h1>
               <span>----- Who Am I</span>
               <p>My Name is Ahmet Ünsal The dev.</p>
-              <button>Learn more</button>
+              <a className="button-aboutme" href="#aboutme">
+                Learn more
+              </a>
             </div>
           </motion.div>
         </div>
