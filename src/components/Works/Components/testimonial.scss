@@ -73,4 +73,7 @@
     z-index: 999;
     top: 10x;
     left: 10px;
+    @include mobile {
+        top: 11px;
+    }
 }
