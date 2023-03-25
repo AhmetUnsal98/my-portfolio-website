@@ -96,9 +96,7 @@ const Testimonial = ({ index, direction }) => {
           </div>
 
           <div className="search-icon">
-            <a href={testimonials[index].project}>
-              <IoSearchOutline color="white" size={25} />
-            </a>
+            <a href={testimonials[index].project}>Live Demo</a>
           </div>
         </motion.div>
       </AnimatePresence>
