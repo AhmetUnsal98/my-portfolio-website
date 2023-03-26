@@ -64,6 +64,7 @@ const Works = () => {
             what you want to learn.
           </p>
         </motion.div>
+
         <motion.div
           className="works-bottom-section"
           initial={{ opacity: 0 }}
