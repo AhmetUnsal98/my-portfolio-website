@@ -5,6 +5,12 @@ import css3 from "../../assets/css3.png";
 import javascript from "../../assets/javascript.png";
 import react from "../../assets/react.png";
 import redux from "../../assets/redux.png";
+import sass from "../../assets/sass.png";
+import typescript from "../../assets/typescript.png";
+import webpack from "../../assets/webpack.png";
+import style from "../../assets/style.jpg";
+import bootsrap from "../../assets/bootstrap.png";
+import git from "../../assets/git.png";
 import SkillCard from "./Components/SkillCard.jsx/SkillCard";
 import { motion } from "framer-motion";
 
@@ -52,9 +58,15 @@ const Aboutme = () => {
       >
         <SkillCard title="HTML" photo={html} />
         <SkillCard title="CSS" photo={css3} />
+        <SkillCard title="BOOTSTRAP" photo={bootsrap} />
+        <SkillCard title="SASS" photo={sass} />
+        <SkillCard title="STYLED-COMPONENTS" photo={style} />
         <SkillCard title="JAVASCRIPT" photo={javascript} />
+        <SkillCard title="TYPESCRIPT" photo={typescript} />
         <SkillCard title="REACT" photo={react} />
         <SkillCard title="REDUX" photo={redux} />
+        <SkillCard title="WEBPACK" photo={webpack} />
+        <SkillCard title="GIT" photo={git} />
       </motion.div>
     </div>
   );

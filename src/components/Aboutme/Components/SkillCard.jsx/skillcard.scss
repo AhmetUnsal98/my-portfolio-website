@@ -6,14 +6,12 @@
     flex: 1;
     max-height: 100px;
     max-width: 120px;
-    min-width: 90px;
+    min-width: 130px;
     margin: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
     @include mobile {
-        max-height: 70px;
-        min-width: 70px;
-        margin: 0rem;
+        max-height: 74px;
+        min-width: 104px;
+        margin: 0.4rem;
     }
 }
 .skill-img-container {

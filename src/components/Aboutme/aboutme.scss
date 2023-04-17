@@ -19,8 +19,8 @@
     overflow-y: hidden;
     justify-content: center;
     @include mobile {
-        margin-top: 2rem;
-        height: 50vh;
+        margin-top: 0.5rem;
+        height: 45vh;
     }
 }
 .progress-container {
@@ -88,7 +88,7 @@
         justify-content: center;
         @include mobile {
             width: 40%;
-            height: 12%;
+            height: 10%;
         }
     }
 }
@@ -102,6 +102,6 @@
     justify-content: center;
     flex-wrap: wrap;
     @include mobile {
-        height: 32vh;
+        height: 42vh;
     }
 }
