@@ -20,7 +20,7 @@
     justify-content: center;
     @include mobile {
         margin-top: 0.5rem;
-        height: 45vh;
+        height: 42vh;
     }
 }
 .progress-container {
@@ -64,10 +64,16 @@
     }
     h1 {
         color: white;
+        @include mobile {
+            font-size: 1.4rem;
+        }
     }
     p {
         color: white;
         margin-top: 0.5rem;
+        @include mobile {
+            margin-top: 0.3rem;
+        }
     }
 
     a {
@@ -89,6 +95,7 @@
         @include mobile {
             width: 40%;
             height: 10%;
+            margin-top: 0.5rem;
         }
     }
 }
@@ -102,6 +109,6 @@
     justify-content: center;
     flex-wrap: wrap;
     @include mobile {
-        height: 42vh;
+        height: 44vh;
     }
 }
