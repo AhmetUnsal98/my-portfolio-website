@@ -20,7 +20,7 @@
     justify-content: center;
     @include mobile {
         margin-top: 0.5rem;
-        height: 44vh;
+        height: 46vh;
     }
 }
 .progress-container {
@@ -73,6 +73,7 @@
         margin-top: 0.5rem;
         @include mobile {
             margin-top: 0.3rem;
+            font-size: 0.9rem;
         }
     }
 
