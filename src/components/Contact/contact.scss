@@ -113,3 +113,26 @@
         font-size: 0.8rem;
     }
 }
+.scrolltop {
+    position: relative;
+    height: 12vh;
+    left: 40%;
+    z-index: 999;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    animation: jump 0.5s infinite alternate;
+    @include mobile {
+        left: 45%;
+    }
+}
+@keyframes jump {
+    from {
+        bottom: 1%;
+    }
+    to {
+        bottom: 3%;
+    }
+}

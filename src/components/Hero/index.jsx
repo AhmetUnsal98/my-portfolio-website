@@ -62,7 +62,7 @@ const Hero = () => {
         </motion.div>
       </div>
       <div className="scroll-button">
-        <IoArrowDown color="#f1a100" size={40} />
+        <IoArrowDown color="#f1a100" size={45} />
       </div>
     </div>
   );

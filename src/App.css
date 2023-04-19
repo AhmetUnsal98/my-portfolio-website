@@ -11,8 +11,3 @@
 .App::-webkit-scrollbar {
     display: none;
 }
-.scroll-top {
-    position: fixed;
-    bottom: 0;
-    color: white;   
-}

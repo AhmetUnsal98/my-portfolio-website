@@ -1,7 +1,7 @@
 import React from "react";
 import "./contact.scss";
+import { IoArrowUpCircleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
-
 const Contact = () => {
   return (
     <div className="contact" id="contact">
@@ -30,6 +30,12 @@ const Contact = () => {
           <button>Submit</button>
         </div>
       </motion.div>
+      <div className="scrolltop">
+        <a style={{ textDecoration: "none", color: "white" }} href="#hero">
+          <IoArrowUpCircleOutline size={40} />
+        </a>
+        <span>Go Up</span>
+      </div>
       <div className="footer">
         <span>ahmetunsal.online Tüm Hakları Saklıdır.</span>
       </div>
