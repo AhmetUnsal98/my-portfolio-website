@@ -5,9 +5,10 @@
     flex-direction: column;
     flex: 1;
     max-height: 100px;
-    max-width: 120px;
+    max-width: 140px;
     min-width: 130px;
-    margin: 1rem;
+
+    margin: 0.2rem;
     @include mobile {
         max-height: 60px;
         min-width: 74px;
@@ -17,21 +18,10 @@
 .skill-img-container {
     overflow-y: hidden;
     flex: 1;
-    animation: animate 2s linear infinite;
-
     img {
         width: 100%;
         height: 100%;
         object-fit: contain;
-    }
-}
-@keyframes animate {
-    0% {
-        transform: rotate3d(0deg);
-    }
-
-    100% {
-        transform: rotate3d(360deg);
     }
 }
 .skill-infos {
@@ -39,8 +29,8 @@
     span {
         text-align: center;
         color: white;
-        margin-top: 1.2rem;
-        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        font-size: 1rem;
         text-shadow:
         /* White glow */ 0 0 2px #f1a100, 0 0 2px #f1a100, 0 0 2px #f1a100;
         @include mobile {
