@@ -20,7 +20,7 @@
     justify-content: center;
     @include mobile {
         margin-top: 0.5rem;
-        height: 46vh;
+        height: 38vh;
     }
 }
 .progress-container {
@@ -114,7 +114,8 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+
     @include mobile {
-        height: 44vh;
+        height: 54vh;
     }
 }

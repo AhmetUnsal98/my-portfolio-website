@@ -32,19 +32,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     @include mobile {
         width: 100%;
         height: auto;
-        margin-top: 30%;
+        margin-top: 20%;
     }
     h2 {
         color: $base-color-orange;
+        margin-top: 0;
     }
     h1 {
         color: white;
+        margin-top: 0;
     }
     p {
         color: white;
+        margin-top: 0;
     }
 }
 .left-section * {
@@ -61,6 +65,7 @@
     flex-direction: column;
     justify-content: center;
     overflow-y: hidden;
+    margin-left: 2rem;
     @include mobile {
         width: 100%;
         height: 50%;

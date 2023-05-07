@@ -17,17 +17,20 @@
     }
 }
 .works-upper-section {
-    width: 70%;
-    height: 30vh;
+    width: 50%;
+    height: 20vh;
 
     h2 {
         color: $base-color-orange;
+        margin: 0;
     }
     h1 {
         color: white;
+        margin: 0;
     }
     p {
         color: whitesmoke;
+        margin: 0;
     }
     @include mobile {
         width: 80%;
