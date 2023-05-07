@@ -67,8 +67,8 @@ const Navbar = () => {
       >
         <motion.div
           className={`mobile-menu ${sidebar === true ? "active" : ""}`}
-          initial={{ x: 300, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 0.95 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 0.95 }}
           transition={{ duration: 0.2 }}
         >
           <IoClose
