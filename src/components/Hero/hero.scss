@@ -170,7 +170,8 @@
     }
     .glow::after {
         filter: blur(24px);
-        opacity: 0.99;
+        border-radius: 50%;
+        opacity: 0.5;
     }
 }
 
