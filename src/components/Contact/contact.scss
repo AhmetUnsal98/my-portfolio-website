@@ -60,7 +60,7 @@
 }
 .right-section {
     width: 50%;
-    height: 65%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,7 +73,7 @@
     }
     input {
         width: 50%;
-        height: 10%;
+        height: 6vh;
         margin: 0.3rem;
         border-radius: 8px;
         border: 1px solid $base-color-orange;
@@ -86,7 +86,7 @@
     }
     button {
         width: 28%;
-        height: 11%;
+        height: 5vh;
         margin: 0.5rem;
         border-radius: 8px;
         background-color: $base-color-orange;
@@ -103,7 +103,7 @@
         color: $base-color-orange;
         margin: 0.3rem;
         @include mobile {
-            margin: 0.2rem;
+            margin: 0rem;
         }
     }
 }
@@ -144,7 +144,7 @@
 }
 .input-container-captcha {
     width: 50%;
-    height: 10%;
+    height: 6vh;
     margin: 0.3rem;
     border-radius: 8px;
     border: 1px solid $base-color-orange;
@@ -163,7 +163,7 @@
 }
 .input-container {
     width: 50%;
-    height: 10%;
+    height: 6vh;
     margin: 0.3rem;
     border-radius: 8px;
     border: 1px solid $base-color-orange;
